@@ -11,7 +11,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
-AMyCharacter::AMyCharacter()
+Artic::Artic()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -19,7 +19,7 @@ AMyCharacter::AMyCharacter()
 }
 
 // Called when the game starts or when spawned
-void AMyCharacter::BeginPlay()
+void Artic::BeginPlay()
 {
 	Super::BeginPlay();
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
@@ -31,7 +31,7 @@ void AMyCharacter::BeginPlay()
 	}
 }
 
-void AMyCharacter::Jump()
+void Artic::Jump()
 {
 	if (bCanJump)
 	{
@@ -40,37 +40,37 @@ void AMyCharacter::Jump()
 	}
 }
 
-void AMyCharacter::Move(const FInputActionValue& Value)
+void Artic::Move(const FInputActionValue& Value)
 {
 }
 
-void AMyCharacter::Look(const FInputActionValue& Value)
+void Artic::Look(const FInputActionValue& Value)
 {
 
 }
 
 // Called every frame
-void AMyCharacter::Tick(float DeltaTime)
+void Artic::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
 // Called to bind functionality to input
-void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void Artic::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	if (UEnhancedInputComponent* EnhancePlayerComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
 	{
 		//Moving
-		EnhancePlayerComponent->BindAction(MovementAction, ETriggerEvent::Triggered, this, &AMyCharacter::Move);
+		EnhancePlayerComponent->BindAction(MovementAction, ETriggerEvent::Triggered, this, &Artic::Move);
 
 		//Looking
-		EnhancePlayerComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AMyCharacter::Look);
+		EnhancePlayerComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &Artic::Look);
 
 		//jump
-		EnhancePlayerComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AMyCharacter::Jump);
+		EnhancePlayerComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &Artic::Jump);
 	}
 }
 

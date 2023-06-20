@@ -15,12 +15,12 @@ class UInputAction;
 class UInputMappingContext;
 
 UCLASS()
-class ERASRPG_API AMyCharacter : public ACharacter
+class ERASRPG_API Artic : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
-	AMyCharacter();
+	Artic();
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 

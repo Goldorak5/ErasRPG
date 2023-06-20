@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ErasRPG.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ErasRPG.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ErasRPGEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
+    <Filter Include="Source\ErasRPG">
+      <UniqueIdentifier>{78FD2764-F722-31A0-A7CC-73196C708C7F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ErasRPG\ErasRPG.Build.cs">
+      <Filter>Source\ErasRPG</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ErasRPG\ErasRPG.cpp">
+      <Filter>Source\ErasRPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ErasRPG\ErasRPG.h">
+      <Filter>Source\ErasRPG</Filter>
+    </ClInclude>
+    <Filter Include="Source\ErasRPG\Private">
+      <UniqueIdentifier>{74D62631-4024-3F61-9D4F-3A58B5C4D64B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ErasRPG\Private\Character">
+      <UniqueIdentifier>{6C9C3D3A-5281-38D6-95DA-A62FC1A5909E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ErasRPG\Private\Character\RunningMan.cpp">
+      <Filter>Source\ErasRPG\Private\Character</Filter>
+    </ClCompile>
+    <Filter Include="Source\ErasRPG\Private\ErasCharacter">
+      <UniqueIdentifier>{3F1C847E-008E-3083-834B-4AEC33218C65}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ErasRPG\Private\ErasCharacter\MyCharacter.cpp">
+      <Filter>Source\ErasRPG\Private\ErasCharacter</Filter>
+    </ClCompile>
+    <Filter Include="Source\ErasRPG\Public">
+      <UniqueIdentifier>{AC6EA2B7-4B1F-39EA-B8D7-863E9B77FBCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ErasRPG\Public\Character">
+      <UniqueIdentifier>{55CEE2CF-33A0-342D-8CA7-528D75B50F36}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ErasRPG\Public\Character\RunningMan.h">
+      <Filter>Source\ErasRPG\Public\Character</Filter>
+    </ClInclude>
+    <Filter Include="Source\ErasRPG\Public\ErasCharacter">
+      <UniqueIdentifier>{3394DC78-8077-3130-8DC5-E663FD2D4BE6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ErasRPG\Public\ErasCharacter\MyCharacter.h">
+      <Filter>Source\ErasRPG\Public\ErasCharacter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ErasRPG",
+			"Path": "C:\\Users\\PC\\OneDrive\\Documents\\Unreal Projects\\ErasRPG\\Source\\ErasRPG.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ErasRPGEditor",
+			"Path": "C:\\Users\\PC\\OneDrive\\Documents\\Unreal Projects\\ErasRPG\\Source\\ErasRPGEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

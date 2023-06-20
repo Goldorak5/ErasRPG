@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\pc\\onedrive\\documents\\unreal projects\\erasrpg\\intermediate\\build\\win64\\unrealeditor\\inc\\erasrpg\\erasrpg.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\pc\\onedrive\\documents\\unreal projects\\erasrpg\\intermediate\\build\\win64\\erasrpgeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\pc\\onedrive\\documents\\unreal projects\\erasrpg\\intermediate\\build\\win64\\unrealeditor\\development\\erasrpg\\definitions.erasrpg.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

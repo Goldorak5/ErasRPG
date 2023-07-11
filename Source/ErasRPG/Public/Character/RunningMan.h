@@ -7,6 +7,10 @@
 #include "RunningMan.generated.h"
 
 
+class UInputMappingContext;
+class USpringArmComponent;
+class UCapsuleComponent;
+
 
 UCLASS()
 class ERASRPG_API ARunningMan : public ACharacter
@@ -21,6 +25,15 @@ public:
 protected:
 
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, Category = Input)
+	TObjectPtr<UInputMappingContext> ErasContext;
+
+	UPROPERTY(EditAnywhere, Category = "Component")
+	TObjectPtr<UCapsuleComponent> Capsule;
+	
+	UPROPERTY(EditAnywhere, Category = "Component")
+	TObjectPtr<USpringArmComponent> SpringArm;
 
 private:
 

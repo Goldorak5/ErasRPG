@@ -13,6 +13,9 @@ void EmptyLinkFunctionForGeneratedCodeRunningMan() {}
 	ERASRPG_API UClass* Z_Construct_UClass_ARunningMan();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_ErasRPG();
+	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
 	void ARunningMan::StaticRegisterNativesARunningMan()
 	{
@@ -28,6 +31,19 @@ void EmptyLinkFunctionForGeneratedCodeRunningMan() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ErasContext_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_ErasContext;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Capsule_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_Capsule;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpringArm_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_SpringArm;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -42,6 +58,34 @@ void EmptyLinkFunctionForGeneratedCodeRunningMan() {}
 		{ "ModuleRelativePath", "Public/Character/RunningMan.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunningMan_Statics::NewProp_ErasContext_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Character/RunningMan.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_ARunningMan_Statics::NewProp_ErasContext = { "ErasContext", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunningMan, ErasContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunningMan_Statics::NewProp_ErasContext_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunningMan_Statics::NewProp_ErasContext_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunningMan_Statics::NewProp_Capsule_MetaData[] = {
+		{ "Category", "Component" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/RunningMan.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_ARunningMan_Statics::NewProp_Capsule = { "Capsule", nullptr, (EPropertyFlags)0x0024080000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunningMan, Capsule), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunningMan_Statics::NewProp_Capsule_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunningMan_Statics::NewProp_Capsule_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunningMan_Statics::NewProp_SpringArm_MetaData[] = {
+		{ "Category", "Component" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/RunningMan.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_ARunningMan_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x0024080000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARunningMan, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunningMan_Statics::NewProp_SpringArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunningMan_Statics::NewProp_SpringArm_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARunningMan_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunningMan_Statics::NewProp_ErasContext,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunningMan_Statics::NewProp_Capsule,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunningMan_Statics::NewProp_SpringArm,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARunningMan_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARunningMan>::IsAbstract,
 	};
@@ -51,11 +95,11 @@ void EmptyLinkFunctionForGeneratedCodeRunningMan() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ARunningMan_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ARunningMan_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ARunningMan_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ARunningMan_Statics::Class_MetaDataParams))
@@ -78,9 +122,9 @@ void EmptyLinkFunctionForGeneratedCodeRunningMan() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ErasRPG_Source_ErasRPG_Public_Character_RunningMan_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunningMan, ARunningMan::StaticClass, TEXT("ARunningMan"), &Z_Registration_Info_UClass_ARunningMan, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunningMan), 480735762U) },
+		{ Z_Construct_UClass_ARunningMan, ARunningMan::StaticClass, TEXT("ARunningMan"), &Z_Registration_Info_UClass_ARunningMan, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunningMan), 2491112946U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ErasRPG_Source_ErasRPG_Public_Character_RunningMan_h_1279064140(TEXT("/Script/ErasRPG"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ErasRPG_Source_ErasRPG_Public_Character_RunningMan_h_1203933785(TEXT("/Script/ErasRPG"),
 		Z_CompiledInDeferFile_FID_ErasRPG_Source_ErasRPG_Public_Character_RunningMan_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ErasRPG_Source_ErasRPG_Public_Character_RunningMan_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
